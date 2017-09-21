@@ -1,0 +1,11 @@
+<div class="row">
+  <div *ngFor="let item of itens" class="col-md-3">
+    <app-sww-list-item [item]="item" (click)="detail(item)"></app-sww-list-item>
+  </div>
+  <div class="col-md-12">
+    <ul class="pager">
+      <li><a class="btn" [ngClass]="{'disabled': !previousPage}" (click)="previous()">Previous</a></li>
+      <li><a class="btn" [ngClass]="{'disabled': !nextPage}" (click)="next()">Next</a></li>
+    </ul>
+  </div>
+</div>

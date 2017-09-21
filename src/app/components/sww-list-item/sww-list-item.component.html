@@ -1,0 +1,20 @@
+<div class="sww-item">
+  <div class="panel panel-default">
+    <div class="panel-body sww-item--img sww-item--clickable">
+        <img src={{defaultImgSrc}}/>
+    </div>
+    <div class="panel-body">
+      <div class="sww-item--title sww-item--clickable">
+        {{item.title}}
+      </div>
+    </div>
+    <div class="panel-footer">
+      <div class="row">
+        <div *ngFor="let detail of item.shortDetails" class="col-md-6">
+          <p class="sww-item--detail text-info">{{detail.name}}</p>
+          <p><strong>{{detail.value}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

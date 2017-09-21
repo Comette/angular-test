@@ -1,0 +1,30 @@
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" (click)="close()" >&times;</button>
+        <h3 class="modal-title text-warning">{{itemTitle}}<small> ({{itemType}})</small></h3>
+      </div>
+      <div class="modal-body">
+        <div class="sww-detail--body">
+          <div *ngIf="!itemCustonContent">
+            <img src={{defaultImgSrc}}/>
+          </div>
+          <div *ngIf="!!itemCustonContent">
+            <div class="opening-crawl">
+              {{itemCustonContent}}
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="sww-detail--data row">
+          <div *ngFor="let attribute of itemData" class="col-md-6">
+            <p class="sww-detail--smal text-info">{{attribute.name}}</p>
+            <p><strong>{{attribute.value}}</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" (click)="close()" >OK</button>
+      </div>
+    </div>
+</div>

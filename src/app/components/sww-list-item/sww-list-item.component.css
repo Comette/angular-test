@@ -1,0 +1,21 @@
+.sww-item--clickable{
+	cursor: pointer;
+}
+
+.sww-item--title{
+	font-size: 24px;
+	text-align: center;
+}
+
+.sww-item--detail{
+	font-size: 12px;
+}
+
+.sww-item--img{
+	padding: 0px;
+	text-align: center;
+}
+.sww-item--img img{
+	max-height: 200px;
+	min-height: 150px;
+}

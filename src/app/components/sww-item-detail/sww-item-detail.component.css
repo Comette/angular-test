@@ -1,0 +1,23 @@
+.sww-detail--body{
+	text-align: center;
+	font-size: 20px;
+}
+
+.sww-detail{
+	border-right: 1px solid #485563;
+}
+
+.sww-detail--data {
+	border-top: 1px solid #485563;
+	padding-top: 15px;
+}
+
+.sww-detail--body img {
+	min-height: 400px;
+	max-height: 600px;
+}
+
+.sww-detail--smal{
+	font-size: 12px;
+}
+
