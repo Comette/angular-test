@@ -5,6 +5,7 @@ import { SwwListItemComponent } from './sww-list-item.component';
 describe('SwwListItemComponent', () => {
   let component: SwwListItemComponent;
   let fixture: ComponentFixture<SwwListItemComponent>;
+  let expectedItem
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -16,6 +17,8 @@ describe('SwwListItemComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(SwwListItemComponent);
     component = fixture.componentInstance;
+    expectedItem = {}
+    component.item = expectedItem
     fixture.detectChanges();
   });
 

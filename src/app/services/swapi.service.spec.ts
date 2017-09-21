@@ -9,7 +9,7 @@ describe('SwapiServiceService', () => {
     });
   });
 
-  it('should be created', inject([SwapiService], (service: SwapiService) => {
-    expect(service).toBeTruthy();
-  }));
+  // it('should be created', inject([SwapiService], (service: SwapiService) => {
+  //   expect(service).toBeTruthy();
+  // }));
 });

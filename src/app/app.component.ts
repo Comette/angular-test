@@ -8,7 +8,7 @@ import { Constants } from "./constants"
 })
 export class AppComponent {
   title = 'app'
-  selectedMenu: string
+  selectedMenu: string = ''
   showList: boolean
 
   constructor() {}

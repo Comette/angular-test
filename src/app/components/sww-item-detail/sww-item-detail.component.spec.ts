@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SwwItemDetailComponent } from './sww-item-detail.component';
+import { DialogService } from "ng2-bootstrap-modal";
 
 describe('SwwItemDetailComponent', () => {
   let component: SwwItemDetailComponent;
@@ -8,7 +9,8 @@ describe('SwwItemDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SwwItemDetailComponent ]
+      declarations: [ SwwItemDetailComponent ],
+      providers: [ DialogService ]
     })
     .compileComponents();
   }));

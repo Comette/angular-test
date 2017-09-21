@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SwwSideMenuComponent } from './sww-side-menu.component';
+import { SwwMenuComponent } from './sww-menu.component';
 
-describe('SwwSideMenuComponent', () => {
-  let component: SwwSideMenuComponent;
-  let fixture: ComponentFixture<SwwSideMenuComponent>;
+describe('SwwMenuComponent', () => {
+  let component: SwwMenuComponent;
+  let fixture: ComponentFixture<SwwMenuComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SwwSideMenuComponent ]
+      declarations: [ SwwMenuComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SwwSideMenuComponent);
+    fixture = TestBed.createComponent(SwwMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
